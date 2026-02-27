@@ -116,14 +116,7 @@ section{padding:96px 0}
 .hero-sub{font-size:1.12rem;color:var(--g6);max-width:500px;margin-bottom:32px;line-height:1.75}
 
 /* Hero mini-form — low friction entry */
-.hero-mf{background:var(--g0);border:1px solid var(--g2);border-radius:var(--radl);padding:24px;margin-bottom:36px}
-.hero-mf-title{font-size:.88rem;font-weight:700;color:var(--d);margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.hero-mf-title span{background:var(--r);color:var(--w);font-size:.68rem;padding:2px 8px;border-radius:4px;font-weight:700}
-.hero-mf-row{display:flex;gap:8px}
-.hero-mf-row input{flex:1;padding:12px 16px;border:1.5px solid var(--g2);border-radius:var(--rad);font-size:.9rem;font-family:var(--ff);color:var(--d);background:var(--w);transition:border-color var(--t),box-shadow var(--t)}
-.hero-mf-row input:focus{outline:0;border-color:var(--r);box-shadow:0 0 0 3px rgba(230,57,70,.08)}
-.hero-mf-row .btn{white-space:nowrap;padding:12px 24px}
-.hero-mf-note{font-size:.76rem;color:var(--g4);margin-top:8px;display:flex;align-items:center;gap:4px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
 
 .trust-bar{display:flex;flex-wrap:wrap;gap:20px;padding-top:28px;border-top:1px solid var(--g2)}
 .trust-item{display:flex;align-items:center;gap:7px;font-size:.84rem;color:var(--g6);font-weight:500}
@@ -361,8 +354,8 @@ section{padding:96px 0}
   .hero h1{font-size:2rem;letter-spacing:-1px}
   .hero-sub{font-size:1rem}
   .st{font-size:1.5rem}
-  .hero-mf-row{flex-direction:column}
-  .hero-mf-row .btn{width:100%}
+  .hero-btns{flex-direction:column}
+  .hero-btns .btn{width:100%;text-align:center}
   .stats-grid,.rm-grid,.pr-grid,.tm-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr;gap:28px}
   .ind-grid{grid-template-columns:1fr}
@@ -414,13 +407,9 @@ section{padding:96px 0}
       <span class="slb">Reputation Management</span>
       <h1>Negative Google-Bewertungen <em>entfernen</em> lassen</h1>
       <p class="hero-sub">Wir prüfen Ihre Bewertungen kostenlos auf Löschbarkeit — und handeln innerhalb von 24&nbsp;Stunden.</p>
-      <div class="hero-mf">
-        <div class="hero-mf-title">Jetzt kostenlos prüfen <span>Dauert 30 Sek.</span></div>
-        <div class="hero-mf-row">
-          <input type="url" id="heroUrl" placeholder="Ihr Google-Profil Link einfügen..." aria-label="Google-Profil URL">
-          <button class="btn btn-p" onclick="document.getElementById('heroUrl').value&&(document.getElementById('url').value=document.getElementById('heroUrl').value,document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}))">Analyse starten</button>
-        </div>
-        <div class="hero-mf-note">🔒 Ihre Daten werden vertraulich behandelt — DSGVO-konform</div>
+      <div class="hero-btns">
+        <a href="#kontakt" class="btn btn-p">Jetzt kostenlos prüfen lassen</a>
+        <a href="tel:+4908000000000" class="btn btn-o">📞 Jetzt anrufen</a>
       </div>
       <div class="trust-bar">
         <div class="trust-item"><span class="trust-chk">✓</span> 500+ Bewertungen entfernt</div>
